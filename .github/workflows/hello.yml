@@ -2,8 +2,8 @@ name: hello-routine
 
 on:
   schedule:
-    # 22:22 UTC = 05:22 Asia/Bangkok (UTC+7). Off-minute dodges GitHub cron congestion.
-    - cron: "22 22 * * *"
+    # 22:00 UTC = 05:00 Asia/Bangkok (UTC+7).
+    - cron: "0 22 * * *"
   workflow_dispatch: {}  # manual trigger for testing
 
 permissions:
